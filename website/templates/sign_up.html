@@ -1,0 +1,69 @@
+{% extends "base.html" %} 
+{% block title %}sign-up{% endblock %}
+{% block content %}
+
+<form method="POST">
+    <h2 align="center">Sign Up</h2>
+    <div class="form-floating mb-3">
+        <input
+        type="text"
+        class="form-control" 
+        id="fname"
+        name="fname"
+        placeholder=""
+        maxlength="10"
+        />
+        <label for= "fname">First Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+    <input
+        type="text"
+        class="form-control"
+        id="lname"
+        name="lname"
+        placeholder=""
+        />
+        <label for= "lname">Last Name</label>
+    </div>
+
+    <div class="form-floating mb-3" >
+        <input 
+        type="email"
+        class="form-control" 
+        id="username" 
+        name="username"
+        placeholder="someone@examole.com"
+        />
+        <label for= "username">Email Address</label>
+    </div>
+
+    <div class="form-floating mb-3" >
+        <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="********"
+        />
+        <label for ="password">create password</label>
+    </div>
+
+    <div class="form-floating mb-3" >
+        <input 
+        type="password"
+        class="form-control" 
+        id="confirm_password"
+        name="confirm_password"
+        placeholder="********"
+        />
+        <label for ="confirm_password">confirm password</label>
+    </div>
+
+    <div class="form-floating mb-3" >
+    <button type="submit" class="btn btn-primary">Let's go</button>
+    </div>
+</div>
+</form>
+
+{% endblock %}
